@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Blinker',sans-serif;
+    color: rgb(15, 15, 15);
+}
+
+i{
+    font-weight: 100;
+    color: rgb(2, 2, 2);
+}
+
+.container{
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: #0e0d0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post{
+    width: 600px;
+    height: 800px;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(15px);
+    padding: 15px;
+    
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+.profile-detail{
+    display: flex;
+    align-items: center;
+    
+}
+
+.profile-detail .p-img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.profile-detail .p-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.profile-detail .name{
+    font-size: 1.5rem;
+    color:#020202
+    text-size: 8px;
+}
+
+.more i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.post-img{
+    height: 70%;
+    width: 100%;
+    position: contain;
+}
+.post-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.post-img i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    /* transition: 1s; */
+}
+
+.active.post-img i{
+    animation: heart 1s linear;
+}
+
+@keyframes heart {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(6);
+    }
+}
+
+.reactions{
+    margin-top: 1rem;
+}
+
+.reactions i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.react-links i{
+    margin-right: 10px;
+}
+
+
+
+.caption{
+    margin-top: 10px;
+    display: flexbox;
+    color:#020202
+}
+
+.caption .profile-name{
+    font-size: 1rem;
+    font-weight: 800;
+    margin-right: 10px;
+    color:#020202
+}
